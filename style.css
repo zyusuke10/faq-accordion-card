@@ -219,7 +219,7 @@ main {
   .image-box{
     position:absolute;
     left:165px;
-    top:340px;
+    top:335px;
     z-index:1;
     display:initial;
   }
