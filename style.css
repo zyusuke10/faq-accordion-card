@@ -1,0 +1,292 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  min-height: 100vh;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.image-woman {
+  width: 235px;
+  margin-top: -105px;
+}
+
+.image-bg {
+  margin-top: -70px;
+}
+
+.card {
+  width: 325px;
+  background-color: white;
+  border-radius: 30px;
+  margin: 150px 25px 85px;
+  -moz-box-shadow: -2px 17px 28px -9px rgba(0, 0, 0, 0.68);
+  -webkit-box-shadow: -2px 17px 28px -9px rgba(0, 0, 0, 0.68);
+  -ms-box-shadow: -2px 17px 28px -9px rgba(0, 0, 0, 0.68);
+  box-shadow: -2px 17px 28px -9px rgba(0, 0, 0, 0.68);
+}
+
+.title {
+  margin-top: 25px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.selectors {
+  margin-top: 20px;
+  padding: 0 20px;
+  margin-bottom: 45px;
+}
+
+.team {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+#teamId {
+  margin-top: 30px;
+}
+
+.file {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.password {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.subscription {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.additional {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.title-p-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.title-p-container img {
+  width: 10px;
+  height: 8px;
+  cursor: pointer;
+}
+
+.answer-p-container {
+  text-align: left;
+}
+
+.title-p {
+  color: hsl(240, 6%, 50%);
+  cursor: pointer;
+  font-weight: 700;
+  color: hsl(238, 29%, 16%);
+  font-size:12px;
+}
+
+.title-p.bold {
+  font-weight: 400;
+  color: hsl(240, 6%, 50%);
+}
+
+.title-p:hover {
+  color: hsl(14, 88%, 65%);
+}
+.answer-p {
+  font-weight: 400;
+  color: hsl(240, 6%, 50%);
+  margin-bottom: 20px;
+  font-size:12px;
+}
+
+
+.answer-p.team-ans {
+  display: block;
+}
+
+.answer-p.file-ans {
+  display: block;
+}
+
+.answer-p.password-ans {
+  display: block;
+}
+
+.answer-p.subscription-ans {
+  display: block;
+}
+
+.answer-p.additional-ans {
+  display: block;
+}
+
+.answer-p.active {
+  display: none;
+}
+
+.arrow{
+    transform: rotate(180deg);
+}
+
+.arrow.rotate {
+  transform: none;
+}
+
+.desktop-image-container{
+    display:none;
+}
+
+.image-box{
+    display:none;
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 920px;
+    height:510px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 130px 0;
+    overflow:hidden;
+  }
+
+  .desktop-wrapper {
+    width: 350px;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    margin: 40px 70px 50px 0;
+  }
+
+  .title{
+    display:flex;
+    text-align: left;
+    width:350px;
+    font-size:18px;
+    font-weight:700;
+    color:hsl(238, 29%, 16%)
+  }
+
+  .selectors{
+    width:350px;
+    height:305px;
+    padding:0;
+    font-size:15px;
+    overflow:scroll;
+    margin-bottom:0;
+    margin-top:0px;
+  }
+
+  .title-p{
+    font-size:15px;
+  }
+
+  .answer-p{
+    margin-left:5px;
+  }
+
+  .mobile-image-container {
+   display:none;
+  }
+
+  .desktop-image-container{
+    display:flex;
+    flex-direction:column;
+    width:435px;
+    position:relative;
+  }
+
+  .image-woman-desktop{
+    position:absolute;
+    top:-185px;
+    right:60px;
+  }
+
+  .box-container{
+    background-attachment: fixed;
+}
+
+  .image-box{
+    position:fixed;
+    z-index:1;
+    display:initial;
+    right:1080px;;
+    top:330px;
+  }
+
+
+  .image-bg-desktop{
+    position:absolute;
+    width:950px;
+    top:-535px;
+    right:60px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1439px){
+    .card{
+        width:700px;
+        margin:200px;
+    }
+
+    .image-woman {
+        width: 400px;
+        margin-top: -180px;
+      }
+
+    .image-bg{
+        width:400px;
+    }
+
+    .title{
+        font-size:20px;
+    }
+
+    .title-p{
+        font-size:20px;
+    }
+
+    .answer-p{
+        font-size:18px;
+    }
+
+}
+
+@media screen and (max-width:280px){
+    .card{
+        width:250px;
+    }
+
+    .image-woman {
+        width: 205px;
+        margin-top: -105px;
+      }
+
+    .image-bg{
+        width:205px;
+    }
+
+}
